@@ -28,11 +28,13 @@
     "content"
     "content"
     "footer";
+    align-items: center;
 }
 /*Sidebar Profile*/
 .profile{
     padding: 20px;
     grid-area: profile;
+    margin-bottom: 22%;
 }
 .profile h1{
     font-size: 3em;
@@ -47,9 +49,11 @@
 }
 /*Sidebar Footer*/
 .footer{
+    margin-top: 40%;
     padding: 20px;
     grid-area: footer;
 }
+/*Content*/
 .projects{
     grid-area: project;
     background-color: lightcoral;
