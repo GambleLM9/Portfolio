@@ -47,6 +47,39 @@
     padding: 20px;
     grid-area: nav;
 }
+.nav{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "aboutme projects"
+    "resume contact"
+    ;
+    grid-gap: 10px;
+}
+.nav li{
+    list-style-type: none;
+    text-align: center;
+    background-color: rgb(255, 226, 185);
+    padding: 10px 5px 10px 5px;
+    border-radius: 20px;
+}
+.nav li a{
+    text-decoration: none;
+    color: black;
+}
+.aboutme{
+    grid-area: aboutme;
+}
+.projects{
+    grid-area: projects;
+}
+.resume{
+    grid-area: resume;
+}
+.contact{
+    grid-area: contact;
+}
 /*Sidebar Footer*/
 .footer{
     margin-top: 40%;
