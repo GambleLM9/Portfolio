@@ -53,6 +53,9 @@
     padding: 20px;
     grid-area: footer;
 }
+.copy{
+    padding: 10px;
+}
 /*Content*/
 .projects{
     grid-area: project;

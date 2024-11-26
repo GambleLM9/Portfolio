@@ -85,4 +85,19 @@
     margin-top: 40%;
     padding: 20px;
     grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.copy{
+    padding: 10px;
+}
+.homebutton{
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    background-color: rgb(255, 226, 185);
+}
+.homebutton a{
+    text-decoration: none;
+    color: black;
 }

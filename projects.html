@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamble's Projects</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /*Project List*/
+        .prolist{
+            grid-area: content;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+            "item1 item2 item3"
+            "item4 item5 item6" 
+            ;
+        }
+        /*Project Items*/
+        .proimage img{
+            width: 100px;
+        }
+        .item1{
+            grid-area: item1;
+            width: 500px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -24,9 +44,19 @@
             </div>
 
             <div class="footer">
-                <p>&copy;2024 All Rights Reserved</p>
+                <p class="copy">&copy;2024 All Rights Reserved</p>
+                <p class="homebutton"><a href="index.html">Home</a></p>
             </div>
         </aside>
+        <section class="prolist">
+            <div class="item1">
+                <div class="proimage">
+                    <img src="images/cozypreview.png" alt="">
+                </div>
+                <p>CozyEats Webpage</p>
+                <p class="visit"><a href="">Visit</a></p>
+            </div>
+        </section>
     </div>
 </body>
 </html>
