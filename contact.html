@@ -20,35 +20,72 @@
         /*Contact: Map*/
         .mapbox{
             grid-area: map;
-            background-color: lightgreen;
             padding: 25px;
         }
         .map{
             width: 100%;
             height: 100%;
-            background-color: lightseagreen;
+            background-color: beige;
+            padding: 10px;
+            border-radius: 25px;
+        }
+        .iframe{
+            border-radius: 25px;
         }
         /*Contact: Information*/
         .infobox{
             grid-area: info;
-            background-color: lightcyan;
             padding: 25px;
         }
         .info{
             width: 100%;
             height: 100%;
-            background-color: lightseagreen;
+            background-color: beige;
+            border-radius: 25px;
+        }
+        .info h3{
+            font-size: 1.5em;
+            padding: 20px;
+        }
+        .info p{
+            padding: 20px;
         }
         /*Contact: Forms*/
         .formsbox{
             grid-area: form;
-            background-color: lightskyblue;
             padding: 25px;
         }
         .form{
             width: 100%;
             height: 100%;
-            background-color: lightseagreen;
+            background-color: beige;
+            border-radius: 25px;
+        }
+        .form form p{
+            padding: 10px 20px 10px 10px;
+            font-size: 1.2em;
+        }
+        .form form h3{
+            padding: 20px;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .form form input{
+            padding: 10px;
+            width: 96%;
+            margin-left: 2%;
+        }
+        .form form textarea{
+            padding: 10px;
+            width: 96%;
+            height: auto;
+            margin-left: 2%;
+            resize: none;
+        }
+        #submit{
+            width: 25%;
+            margin-left: 38%;
+            margin-top: 2.5px;
         }
     </style>
 </head>
@@ -77,20 +114,33 @@
         <section class="contacts">
             <div class="mapbox">
                 <div class="map">
-
+                    <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425498.5355269978!2d-112.50014552648713!3d33.57396629991092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b23272d679d37%3A0x9f14430b838d3b54!2sGlendale%2C%20AZ!5e0!3m2!1sen!2sus!4v1734033194079!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
 
             <div class="infobox">
                 <div class="info">
-
+                    <h3>Contact Information</h3>
+                    <p><b>Email:</b> jkr202008@gmail.com</p>
+                    <p><b>Phone Number:</b> (602) 354-7173</p>
+                    <p><b>Location:</b> Glendale, AZ</p>
+                    <p><b>Github:</b> github.com/GambleLM9</p>
                 </div>
             </div>
 
             <div class="formsbox">
                 <div class="form">
-                    <form action="">
-                        
+                    <form action="jkr202008@gmail.com" method="post">
+                        <h3>Get in touch with me!</h3>
+                        <p>Name</p>
+                        <input type="text" name="name" id="name" placeholder="What's your name?" required>
+                        <p>Email</p>
+                        <input type="email" name="email" id="email" placeholder="What's your email?" required>
+                        <p>Subject</p>
+                        <input type="text" name="sub" id="sub" placeholder="What's this about?" required>
+                        <p>Message</p>
+                        <textarea name="mess" id="mess" cols="30" rows="20" placeholder="Your message for me here!" required></textarea>
+                        <input type="submit" name="submit" id="submit">
                     </form>
                 </div>
             </div>
