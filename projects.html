@@ -9,20 +9,35 @@
         /*Project List*/
         .prolist{
             grid-area: content;
+            display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
             grid-template-areas:
-            "item1 item2 item3"
-            "item4 item5 item6" 
+            "top top top"
+            "bottom bottom bottom" 
             ;
         }
         /*Project Items*/
-        .proimage img{
-            width: 100px;
+        .tophalf{
+            grid-area: top;
+            display: flex;
+            justify-content: space-around;
         }
         .item1{
-            grid-area: item1;
-            width: 500px;
+            background-color: lightcoral;
+            width: 230px;
+            height: 230px;
+            padding: 2%;
+            margin: 2%;
+            margin-top: 10%;
+        }
+        .proimage img{
+            width: 100%;
+        }
+        .bothalf{
+            grid-area: bottom;
+            display: flex;
+            justify-content: space-around;
         }
     </style>
 </head>
@@ -49,13 +64,46 @@
             </div>
         </aside>
         <section class="prolist">
-            <div class="item1">
-                <div class="proimage">
+            <div class="tophalf">
+                <div class="item1">
+                    <div class="proimage">
                     <img src="images/cozypreview.png" alt="">
+                    </div>
+                    <p>CozyEats Webpage</p>
+                    <p class="visit"><a href="">Visit</a></p>
                 </div>
-                <p>CozyEats Webpage</p>
-                <p class="visit"><a href="">Visit</a></p>
+                <div class="item1">
+                    <div class="proimage">
+                    <img src="images/cozypreview.png" alt="">
+                    </div>
+                    <p>CozyEats Webpage</p>
+                    <p class="visit"><a href="">Visit</a></p>
+                </div>
             </div>
+            <div class="bothalf">
+                <div class="item1">
+                    <div class="proimage">
+                    <img src="images/cozypreview.png" alt="">
+                    </div>
+                    <p>CozyEats Webpage</p>
+                    <p class="visit"><a href="">Visit</a></p>
+                </div>
+                <div class="item1">
+                    <div class="proimage">
+                    <img src="images/cozypreview.png" alt="">
+                    </div>
+                    <p>CozyEats Webpage</p>
+                    <p class="visit"><a href="">Visit</a></p>
+                </div>
+                <div class="item1">
+                    <div class="proimage">
+                    <img src="images/cozypreview.png" alt="">
+                    </div>
+                    <p>CozyEats Webpage</p>
+                    <p class="visit"><a href="">Visit</a></p>
+                </div>
+            </div>
+            
         </section>
     </div>
 </body>
